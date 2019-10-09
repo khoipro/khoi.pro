@@ -16,14 +16,12 @@
 
 	{{- template "_internal/opengraph.html" . -}}
 	{{- template "_internal/twitter_cards.html" . -}}
-	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" async defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	<script>
-		window.addEventListener('DOMContentLoaded', function() {
-			WebFont.load({
-				google: {
-					families: ['Open Sans:400,700,vietnamese']
-				}
-			});
+		WebFont.load({
+			google: {
+				families: ['Open Sans:400,700,vietnamese']
+			}
 		});
 	</script>
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/normalize.css" />
