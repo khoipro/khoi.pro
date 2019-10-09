@@ -1,7 +1,7 @@
 ---
 title: "Load remote assets in WordPress local projects"
 date: 2019-10-09T17:33:11+07:00
-draft: true
+draft: false
 tags: [wordpress,cdn,local,remote,proxy]
 ---
 
