@@ -4,8 +4,6 @@ slug: "about"
 type: "page"
 ---
 
-# About
-
 I'm a Khoi Nguyen (calling me Khoi is ok), a Fullstack Web Developer in Hanoi, VN. I spent around 8-10 hours per day to keep website business working.
 
 ## My Daily Tasks
