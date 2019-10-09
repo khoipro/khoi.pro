@@ -9,7 +9,7 @@ pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
 # Your Disqus sortname.
-disqusShortname = "khoiprodotcom"
+disqusShortname = "khoi-pro"
 
 # Number of posts to show in recent posts list (Optional). Defaults to 10.
 paginate = 10
