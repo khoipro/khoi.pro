@@ -16,15 +16,17 @@
 
 	{{- template "_internal/opengraph.html" . -}}
 	{{- template "_internal/twitter_cards.html" . -}}
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" async defer></script>
+	<script>
+		window.addEventListener('DOMContentLoaded', function() {
+			WebFont.load({
+				google: {
+					families: ['Open Sans:400,700,vietnamese']
+				}
+			});
+		});
+	</script>
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ .Site.BaseURL }}css/main.css" />
-
-	{{- if and (isset .Site.Params "social") (isset .Site.Params "feathericonscdn") (eq .Site.Params.featherIconsCDN true) -}}
-	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-	{{- else if (isset .Site.Params "social") -}}
-	<script src="{{ .Site.BaseURL }}js/feather.min.js"></script>
-	{{- end -}}
 	<script src="{{ .Site.BaseURL }}js/main.js"></script>
 </head>

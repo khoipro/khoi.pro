@@ -1,28 +1,32 @@
+html {
+    font-size: 100%;
+}
+
 body {
-    font-family: "ubuntu", sans-serif;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
     font-weight: 300;
 	color: #333;
 	line-height: 1.6;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 a, a:hover {
-    color: #a00;
+    color: #4691c7;
     text-decoration: none;
 }
 
 html,button,input,select,textarea {
-    color: #222
+    color: #222;
 }
 
 ::-moz-selection {
     background: #b3d4fc;
-    text-shadow: none
+    text-shadow: none;
 }
 
 ::selection {
     background: #b3d4fc;
-    text-shadow: none
+    text-shadow: none;
 }
 
 hr {
@@ -31,7 +35,7 @@ hr {
     border: 0;
     border-top: 1px solid #ccc;
     margin: 1rem 0;
-    padding: 0
+    padding: 0;
 }
 
 img {
@@ -75,11 +79,11 @@ blockquote cite {
 }
 
 blockquote em {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 a,a:hover {
-    color: #a00;
+    color: #2983c4;
     text-decoration: none
 }
 
@@ -88,14 +92,14 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: raleway,sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     line-height: 1.2;
     color: #333;
     font-weight: 100
 }
 
 h1 {
-    font-size: 2.75rem
+    font-size: 2.45rem
 }
 
 h2 {
@@ -197,7 +201,6 @@ ul {
 
 .header {
 	margin-bottom: 20px;
-	padding-bottom: 20px;
 }
 
 .header h1,
@@ -212,9 +215,28 @@ ul {
     font-size: 1.125rem;
 }
 
-.header nav {
+.header .nav--main {
 	margin-top: 20px;
-	border-top: 1px solid #f4f4f4;
+	padding: 0 10px 10px;
+	background: #2983c4;
+	border-radius: 5px;
+}
+
+.header .nav a {
+    transition: color 0.3s;
+}
+
+.header .nav--main a {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.header .nav--main a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header .nav--social a:hover {
+    color: #000;
 }
 
 .header nav ul,
@@ -235,6 +257,14 @@ ul {
     text-transform: capitalize;
 }
 
+.header .site-title {
+    color: #333;
+}
+
+.header .site-title span {
+    color: #2983c4;
+}
+
 .header .site-description {
 	display: flex;
 	justify-content: space-between;
@@ -247,7 +277,7 @@ ul {
 }
 
 .header .site-description nav ul svg {
-	max-height: 15px;
+	max-height: 24px;
 }
 
 .section .section-header {
