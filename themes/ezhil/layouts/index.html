@@ -5,24 +5,15 @@
 	<div class="container wrapper">
 		 {{ partial "head.html" . }}
 
-		<div class="recent-posts section">
-			<h2 class="section-header">Recent posts</h2>
-			<div class="posts">
+		<div class="posts section">
+			<h2 class="section-header posts__headline">Recent posts</h2>
+			<div class="posts__wrapper">
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
 				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
 				{{ range $paginator.Pages }}
-				<div class="post">
-					<h3><a class="title" href="{{ .RelPermalink }}">{{.Title}}</a></h3>
-					<p><span class="meta">{{ dateFormat "Jan 2, 2006" .Date }}</span> - <span class="description">
-						{{ if isset .Params "description" }}
-						{{ .Description }}
-						{{ else if gt (len .RawContent) 120 }}
-						{{ slicestr .RawContent 0 120 }}...
-						{{ else }}
-						{{ .RawContent }}
-						{{ end }}
-					</span></p>
-				</div>
+				<ul class="posts__list">
+					<li class="posts__item"><a class="posts__link" href="{{ .RelPermalink }}">{{.Title}}</a></li>
+				</ul>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}
 			</div>

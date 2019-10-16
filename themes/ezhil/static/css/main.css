@@ -289,11 +289,20 @@ ul {
 	letter-spacing: 1px;
 }
 
-.recent-posts .posts .post {
-	margin-bottom: 30px;
+.posts__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.recent-posts .posts .post .meta,
+.posts__item {
+    margin-top: 10px;
+}
+
+.posts__link {
+    display: block;
+}
+
 .post .post-header .meta,
 .list .posts .post .meta {
 	font-size: 0.725rem;
